@@ -24,7 +24,7 @@ function InitSalProj()
 
 	local current_win = vim.api.nvim_get_current_win()
 
-	vim.cmd("Neotree")
+	vim.cmd("Neotree action=show reveal_force_cwd=true")
 	vim.cmd("Copen")
 
 	vim.api.nvim_set_current_win(current_win)
