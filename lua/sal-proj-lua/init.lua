@@ -12,6 +12,8 @@ local custom_project_type = {"lua"}
 local project_pattern_table = { "*.vimproj", "_vimproj" }
 
 function InitSalProj()
+	vim.o.ft = "lua"
+
 	local file_type = nil
 	local file_name = vim.fn.expand("%")
 	local s = file_name:find("%.")
@@ -36,7 +38,7 @@ function InitSalProj()
 	end
 
 	-- custom config in vimproj file
-	vim.cmd("so %")
+	dofile(file_name)
 end
 
 function SetupAutoCommand()
