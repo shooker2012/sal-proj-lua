@@ -46,3 +46,5 @@ function SetupAutoCommand()
 end
 
 SetupAutoCommand()
+
+require("sal-proj-lua.svn_commands")
