@@ -1,0 +1,54 @@
+*sal-proj-lua.txt*		Plugin to manager project.
+
+
+==============================================================================
+COMMANDS
+*sal-proj-lua-commands*
+
+------------------------------------------------------------------------------
+Show svn log.                                                         *SVNLog*
+
+:SVNLog [path]
+
+DEFAULT path is CURRENT FILE("%").
+
+------------------------------------------------------------------------------
+SVN Update path.                                                   *SVNUpdate*
+
+:SVNUpdate [path]
+
+DEFAULT path is CURRENT FILE("%").
+
+------------------------------------------------------------------------------
+SVNDiff                                                              *SVNDiff*
+
+:SVNDiff [path] 
+
+DEFAULT path is CURRENT FILE("%").
+
+------------------------------------------------------------------------------
+SVN Blame                                                           *SVNBlame*
+
+:SVNBlame [path]
+
+DEFAULT path is CURRENT FILE("%").
+------------------------------------------------------------------------------
+SVN Commit                                                         *SVNCommit*
+
+:SVNCommit [path]
+
+DEFAULT path is CURRENT FOLDER(".").
+
+------------------------------------------------------------------------------
+SVNRevert                                                          *SVNRevert*
+
+:SVNRevert [path]
+
+DEFAULT path is CURRENT FOLDER(".").
+
+------------------------------------------------------------------------------
+SVNCleanup                                                        *SVNCleanup*
+
+:SVNCleanup [path]
+
+DEFAULT path is CURRENT FOLDER(".").
